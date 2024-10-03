@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>File Explorer But With Sizes</title>
+</head>
+<body>
+    <div id="currentPath">
+        <div id="path_nav">
+            <div id="nav_back" class="nav_btn"></div>
+            <div id="nav_forth" class="nav_btn"></div>
+        </div>
+        <div id='pathText'></div>
+    </div>
+    <div id="headers">
+        <div id="fileName" class="fileHeader">Name</div>
+        <div id="filemDate" class="fileHeader">Date Modified</div>
+        <div id="fileSize" class="fileHeader">Size
+            <div id="calculationProcentage">
+                0 / 1 0%
+            </div>
+        </div>
+    </div>
+    <div id="fileViewList"></div>
+    <div id="leftClickPopUp">
+        Open in File Explorer
+    </div>
+</body>
+</html>

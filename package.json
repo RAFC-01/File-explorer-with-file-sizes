@@ -1,0 +1,39 @@
+{
+  "name": "file-explorer-with-sizes",
+  "productName": "File Explorer But With Sizes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "build-win": "electron-packager . --overwrite --asar --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --icon=assets/icon.ico --version-string.FileDescription=CE --version-string.ProductName=\"Test\""
+  },
+  "keywords": [],
+  "author": "RC01",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-packager": "^17.1.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "build": {
+    "appId": "app.fileExplorer.size",
+    "productName": "File Explorer But With Sizes",
+    "files": [
+      "index.js",
+      "node_modules/**/*",
+      "client/**/*",
+      "package.json",
+      "assets/**/*"
+    ],
+    "win": {
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "icon": "path/to/icon.icns"
+    },
+    "linux": {
+      "icon": "path/to/icon.png"
+    }
+  }
+}
